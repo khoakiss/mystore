@@ -1,0 +1,16 @@
+2013-04-15 15:30:50 - PHP Notice:  Undefined variable: text_welcome in C:\wamp\www\store\catalog\view\theme\shop\template\common\header.tpl on line 88
+2013-04-15 15:31:05 - PHP Notice:  Undefined variable: text_welcome in C:\wamp\www\store\catalog\view\theme\shop\template\common\header.tpl on line 88
+2013-04-15 15:49:40 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\store\system\library\mail.php on line 150
+2013-04-15 15:49:41 - PHP Notice:  Undefined variable: text_logout in C:\wamp\www\store\catalog\view\theme\shop\template\common\header.tpl on line 83
+2013-04-15 16:35:56 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:35:56 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:00 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:00 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:11 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:11 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:12 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:12 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:13 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:13 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:14 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
+2013-04-15 16:36:14 - PHP Notice:  Undefined variable: product in C:\wamp\www\store\catalog\view\theme\shop\template\module\cart.tpl on line 4
