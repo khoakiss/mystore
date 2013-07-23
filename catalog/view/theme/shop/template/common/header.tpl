@@ -60,15 +60,15 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
   <!--<?php echo $cart; ?>-->
   <div id="search">
     <input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
-    <div class="button-search"><span><span>Search</span></span></div>
+    <div class="button-search"><span><span>TÌM KIẾM</span></span></div>
   </div>
   <div class="links">
   	<a href="<?php echo $home; ?>">
   		<?php echo $text_home; ?>
   	</a>
-  	<a href="<?php echo $wishlist; ?>" id="wishlist-total">
+  	<!--<a href="<?php echo $wishlist; ?>" id="wishlist-total">
   		<?php echo $text_wishlist; ?>
-  	</a>
+  	</a>-->
   	<a href="<?php echo $account; ?>">
   		<?php echo $text_account; ?>
   	</a>

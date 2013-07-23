@@ -8,6 +8,7 @@ class ControllerCommonFooter extends Controller {
 		$this->data['text_extra'] = $this->language->get('text_extra');
 		$this->data['text_contact'] = $this->language->get('text_contact');
 		$this->data['text_return'] = $this->language->get('text_return');
+		$this->data['text_facebook'] = $this->language->get('text_facebook');
     	$this->data['text_sitemap'] = $this->language->get('text_sitemap');
 		$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
 		$this->data['text_voucher'] = $this->language->get('text_voucher');

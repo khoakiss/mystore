@@ -10,7 +10,7 @@
     <?php } ?>
   </div>
   <h1><?php echo $heading_title; ?></h1>
-  <p><?php echo $text_account_already; ?></p>
+  <p><?php echo $text_account_already; ?></p><br/>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <h2><?php echo $text_your_details; ?></h2>
     <div class="content">
@@ -43,47 +43,11 @@
             <span class="error"><?php echo $error_telephone; ?></span>
             <?php } ?></td>
         </tr>
-        <tr>
-          <td><?php echo $entry_fax; ?></td>
-          <td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>
-        </tr>
       </table>
     </div>
     <h2><?php echo $text_your_address; ?></h2>
     <div class="content">
       <table class="form">
-        <tr>
-          <td><?php echo $entry_company; ?></td>
-          <td><input type="text" name="company" value="<?php echo $company; ?>" /></td>
-        </tr>        
-        <tr style="display: <?php echo (count($customer_groups) > 1 ? 'table-row' : 'none'); ?>;">
-          <td><?php echo $entry_customer_group; ?></td>
-          <td><?php foreach ($customer_groups as $customer_group) { ?>
-            <?php if ($customer_group['customer_group_id'] == $customer_group_id) { ?>
-            <input type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" id="customer_group_id<?php echo $customer_group['customer_group_id']; ?>" checked="checked" />
-            <label for="customer_group_id<?php echo $customer_group['customer_group_id']; ?>"><?php echo $customer_group['name']; ?></label>
-            <br />
-            <?php } else { ?>
-            <input type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" id="customer_group_id<?php echo $customer_group['customer_group_id']; ?>" />
-            <label for="customer_group_id<?php echo $customer_group['customer_group_id']; ?>"><?php echo $customer_group['name']; ?></label>
-            <br />
-            <?php } ?>
-            <?php } ?></td>
-        </tr>      
-        <tr id="company-id-display">
-          <td><span id="company-id-required" class="required">*</span> <?php echo $entry_company_id; ?></td>
-          <td><input type="text" name="company_id" value="<?php echo $company_id; ?>" />
-            <?php if ($error_company_id) { ?>
-            <span class="error"><?php echo $error_company_id; ?></span>
-            <?php } ?></td>
-        </tr>
-        <tr id="tax-id-display">
-          <td><span id="tax-id-required" class="required">*</span> <?php echo $entry_tax_id; ?></td>
-          <td><input type="text" name="tax_id" value="<?php echo $tax_id; ?>" />
-            <?php if ($error_tax_id) { ?>
-            <span class="error"><?php echo $error_tax_id; ?></span>
-            <?php } ?></td>
-        </tr>
         <tr>
           <td><span class="required">*</span> <?php echo $entry_address_1; ?></td>
           <td><input type="text" name="address_1" value="<?php echo $address_1; ?>" />
@@ -92,24 +56,13 @@
             <?php } ?></td>
         </tr>
         <tr>
-          <td><?php echo $entry_address_2; ?></td>
-          <td><input type="text" name="address_2" value="<?php echo $address_2; ?>" /></td>
-        </tr>
-        <tr>
           <td><span class="required">*</span> <?php echo $entry_city; ?></td>
           <td><input type="text" name="city" value="<?php echo $city; ?>" />
             <?php if ($error_city) { ?>
             <span class="error"><?php echo $error_city; ?></span>
             <?php } ?></td>
         </tr>
-        <tr>
-          <td><span id="postcode-required" class="required">*</span> <?php echo $entry_postcode; ?></td>
-          <td><input type="text" name="postcode" value="<?php echo $postcode; ?>" />
-            <?php if ($error_postcode) { ?>
-            <span class="error"><?php echo $error_postcode; ?></span>
-            <?php } ?></td>
-        </tr>
-        <tr>
+        <tr style="display:none">
           <td><span class="required">*</span> <?php echo $entry_country; ?></td>
           <td><select name="country_id">
               <option value=""><?php echo $text_select; ?></option>
@@ -165,9 +118,9 @@
             <input type="radio" name="newsletter" value="0" />
             <?php echo $text_no; ?>
             <?php } else { ?>
-            <input type="radio" name="newsletter" value="1" />
+            <input type="radio" name="newsletter" value="1" checked="checked" />
             <?php echo $text_yes; ?>
-            <input type="radio" name="newsletter" value="0" checked="checked" />
+            <input type="radio" name="newsletter" value="0" />
             <?php echo $text_no; ?>
             <?php } ?></td>
         </tr>

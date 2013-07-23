@@ -1,6 +1,6 @@
 <?php
 // Heading  
-$_['heading_title']          = 'Shopping Cart';
+$_['heading_title']          = 'Túi xách của bạn';
 
 // Text
 $_['text_success']           = 'Success: You have added <a href="%s">%s</a> to your <a href="%s">shopping cart</a>!';
@@ -20,7 +20,7 @@ $_['text_use_reward']        = 'Use Reward Points (Available %s)';
 $_['text_shipping_estimate'] = 'Estimate Shipping &amp; Taxes';
 $_['text_shipping_detail']   = 'Enter your destination to get a shipping estimate.';
 $_['text_shipping_method']   = 'Please select the preferred shipping method to use on this order.';
-$_['text_empty']             = 'Your shopping cart is empty!';
+$_['text_empty']             = 'Chúng tôi rất tiếc vì bạn chưa có sản phẩm nào trong túi xách. Vui lòng quay lại trang chủ và chọn sản phẩm đúng phong cách nhé (^_^)';
 
 // Column
 $_['column_image']           = 'Image';

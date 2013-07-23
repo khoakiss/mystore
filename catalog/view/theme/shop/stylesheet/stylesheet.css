@@ -55,7 +55,7 @@ p {
 	margin-top: 0px;
 }
 a, a:visited, a b {
-	color: #38B0E3;
+	color: #b2b2b2;
 	text-decoration: underline;
 	cursor: pointer;
 }
@@ -87,7 +87,7 @@ label {
 }
 /* layout */
 #wrapper {
-	background-color: #fff;
+	background-color: transparent;
 	width: 1064px;
 	margin: 0 auto 40px;
 }
@@ -109,7 +109,7 @@ label {
 }
 #content {
 	min-height: 400px;
-	margin-bottom: 25px;
+	padding-bottom: 25px;
 	padding-top: 20px;
 }
 #column-left + #column-right + #content, #column-left + #content {
@@ -290,11 +290,13 @@ label {
 #header .button-search span {
 	height: 34px;
 	font-size: 17px;
-	font-weight: bold;
 	display: block;
 }
 #header .button-search span span {
 	padding: 0 9px;
+}
+#header .button-search span span:hover {
+	background-color: #0e7d28;
 }
 #header .button-search>span {
 	float: left;
@@ -312,12 +314,13 @@ label {
 }
 #header #search input {
 	background: #fff;
-	width: 233px;
+	width: 234px;
 	border: 1px solid #d8d8d8;
 	float: left;
 	font-size: 11px;
 	padding: 9px 11px 9px 10px;
 	color: #363636;
+	margin: 0;
 }
 #header #welcome {
 	position: absolute;
@@ -602,7 +605,7 @@ table.radio tr.highlight:hover td {
 /* button */
 a.button, input.button {
 	cursor: pointer;
-	float: left;
+	/*float: left;*/
 	height: 34px;
 	padding: 0;
 	font: normal 15px/34px Arial,Helvetica,sans-serif;
@@ -787,6 +790,7 @@ ul.box-category > li ul > li > a {
 }
 ul.box-category > li ul > li > a.active {
 	font-weight: bold;
+	color: #9A9A9A;
 }
 /* box filter */
 ul.box-filter, ul.box-filter ul {
@@ -885,7 +889,7 @@ ul.box-filter > li ul {
 /* product */
 .product-filter {
 	border-bottom: 1px solid #EEEEEE;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	overflow: auto;
 }
 .product-filter .display {
@@ -893,6 +897,24 @@ ul.box-filter > li ul {
 	float: left;
 	padding-top: 4px;
 	color: #333;
+}
+.product-filter .display b{
+float: left;
+padding: 5px 5px 0 0;
+}
+.clear {
+	clear: left;
+}
+.product-filter .display a{
+	display: inline-block;
+	cursor: pointer;
+	background: url("../image/grid-list.png") no-repeat right -24px;
+	width: 25px;
+	height: 24px;
+}
+.product-filter .display a.active{
+	background: url("../image/grid-list.png") no-repeat top left;
+	cursor: default;
 }
 .product-filter .display a {
 	font-weight: bold;
@@ -919,6 +941,11 @@ ul.box-filter > li ul {
 	overflow: auto;
 	margin-bottom: 15px;
 }
+.product-list li{
+	display: inline-block;
+	padding-bottom: 20px;
+	width: 100%;
+}
 .product-list .right {
 	float: right;
 	margin-left: 15px;
@@ -929,17 +956,20 @@ ul.box-filter > li ul {
 }
 .product-list .image {
 	float: left;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 .product-list .image img {
 	padding: 3px;
-	border: 1px solid #E7E7E7;
+	height: 170px;
+	width: 170px;
 }
 .product-list .name {
-	margin-bottom: 3px;
+	margin-bottom: 10px;
 }
 .product-list .name a {
-	color: #38B0E3;
+	font-size: 15px;
+	color: #0daf2e;
+	font-weight: bold;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -952,19 +982,16 @@ ul.box-filter > li ul {
 	color: #7B7B7B;
 }
 .product-list .price {
-	float: right;
-	height: 50px;
-	margin-left: 8px;
-	text-align: right;
+	margin: 10px 0 10px 0;
 	color: #333333;
-	font-size: 12px;
+	font-size: 17px;
 }
 .product-list .price-old {
 	color: #F00;
 	text-decoration: line-through;
 }
 .product-list .price-new {
-	font-weight: bold;
+	color: #333;
 }
 .product-list .price-tax {
 	font-size: 12px;
@@ -994,6 +1021,13 @@ ul.box-filter > li ul {
 .product-grid {
 	width: 100%;
 	overflow: auto;
+	margin-bottom: 20px;
+}
+.product-grid li{
+	display: inline-block;
+	padding-right: 20px;
+	width: 185px;
+padding-bottom: 20px;
 }
 .product-grid > div {
 	width: 130px;
@@ -1011,7 +1045,8 @@ ul.box-filter > li ul {
 }
 .product-grid .image img {
 	padding: 3px;
-	border: 1px solid #E7E7E7;
+	height: 170px;
+	width: 170px;
 }
 .product-grid .name a {
 	color: #38B0E3;
@@ -1031,7 +1066,7 @@ ul.box-filter > li ul {
 	display: block;
 	font-weight: bold;
 	color: #333333;
-	margin-bottom: 4px;
+	margin: 10px 0;
 }
 .product-grid .price-old {
 	color: #F00;
@@ -1106,11 +1141,12 @@ ul.box-filter > li ul {
 	color: #4D4D4D;
 }
 .product-info .description span {
-	color: #38B0E3;
+	color: #000;
 }
 .product-info .description a {
 	color: #4D4D4D;
 	text-decoration: none;
+	font-weight: bold;
 }
 .product-info .price {
 	overflow: auto;
@@ -1348,7 +1384,28 @@ ul.box-filter > li ul {
 	background: url(../image/bg-login.gif) no-repeat left bottom #ffffff;
 	min-height: 260px;
 }
-.login-content h2{
+.account-content .left {
+	float: left;
+	width: 48%;
+	border: 1px solid #ececec;
+	padding: 18px 20px 20px 20px;
+	width: 460px;
+	min-height: 260px;
+}
+.account-content ul{
+	padding-left: 12px;
+}
+.account-content ul li{
+	padding-top: 10px;
+}
+.account-content ul li a{
+	text-decoration: none;
+	color: #7F7F7F;
+}
+.account-content ul li a:hover{
+	color: #3dbf58;
+}
+.login-content h2, .account-content h2{
 	padding: 0 0 15px 0;
 	border-bottom: 1px solid #e6e6e6;
 	font-size: 12px;
@@ -1362,6 +1419,14 @@ ul.box-filter > li ul {
 	padding: 18px 20px 20px 20px;
 	width: 460px;
 	background: url(../image/bg-login-2.gif) no-repeat left bottom #ffffff;
+	min-height: 260px;
+}
+.account-content .right {
+	float: right;
+	width: 48%;
+	border: 1px solid #ececec;
+	padding: 18px 20px 20px 20px;
+	width: 460px;
 	min-height: 260px;
 }
 .login-content .left .content, .login-content .right .content {
@@ -1665,8 +1730,11 @@ ul.box-filter > li ul {
 	overflow: auto;
 	min-height: 100px;
 	padding: 30px 20px 24px 20px;
-	background: #353535;
+	background-color: #000;
 	position: relative;
+	-moz-opacity: 0.55;
+	opacity: 0.55;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=55);
 }
 #footer h3 {
 	font-size: 20px;
@@ -1696,7 +1764,7 @@ margin: 0;
 	color: #9a9a9a;
 }
 #footer .column a:hover {
-	color: #3dbf58 !important;
+	color: #018e1e !important;
 }
 #powered {
 	margin-top: 5px;
@@ -1711,4 +1779,13 @@ margin: 0;
 }
 .banner div img {
 	margin-bottom: 20px;
+}
+/*add some css*/
+.cart-module{
+	margin-bottom: 10px;
+}
+/*custom style*/
+.boldgreen{
+	font-weight: bold;
+	color: #0e7d28;
 }

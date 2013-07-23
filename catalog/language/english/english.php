@@ -9,7 +9,7 @@ $_['decimal_point']         = '.';
 $_['thousand_point']        = ',';
 
 // Text
-$_['text_home']             = 'Home';
+$_['text_home']             = 'Trang chủ';
 $_['text_yes']              = 'Yes';
 $_['text_no']               = 'No';
 $_['text_none']             = ' --- None --- ';
@@ -21,7 +21,7 @@ $_['text_separator']        = ' &raquo; ';
 // Buttons
 $_['button_add_address']    = 'Add Address';
 $_['button_back']           = 'Back';
-$_['button_continue']       = 'Continue';
+$_['button_continue']       = 'Đăng ký';
 $_['button_cart']           = 'Add to Cart';
 $_['button_compare']        = 'Add to Compare';
 $_['button_wishlist']       = 'Add to Wish List';
@@ -36,7 +36,7 @@ $_['button_new_address']    = 'New Address';
 $_['button_change_address'] = 'Change Address';
 $_['button_reviews']        = 'Reviews';
 $_['button_write']          = 'Write Review';
-$_['button_login']          = 'Login';
+$_['button_login']          = 'Đăng nhập';
 $_['button_update']         = 'Update';
 $_['button_remove']         = 'Remove';
 $_['button_reorder']        = 'Reorder';

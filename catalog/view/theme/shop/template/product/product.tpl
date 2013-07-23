@@ -26,11 +26,11 @@
         <?php if ($manufacturer) { ?>
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
         <?php } ?>
-        <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
+        <span><?php echo $text_model; ?></span> <b><?php echo $model; ?></b><br />
         <?php if ($reward) { ?>
-        <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
+        <span><?php echo $text_reward; ?></span> <b><?php echo $reward; ?></b><br />
         <?php } ?>
-        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?></div>
+        <span><?php echo $text_stock; ?></span> <b><?php echo $stock; ?></b></div>
       <?php if ($price) { ?>
       <div class="price"><?php echo $text_price; ?>
         <?php if (!$special) { ?>
@@ -39,9 +39,6 @@
         <span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
         <?php } ?>
         <br />
-        <?php if ($tax) { ?>
-        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />
-        <?php } ?>
         <?php if ($points) { ?>
         <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />
         <?php } ?>
@@ -207,9 +204,6 @@
           <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
           &nbsp;
           <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
-          <span>&nbsp;&nbsp;<?php echo $text_or; ?>&nbsp;&nbsp;</span>
-          <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a><br />
-            <a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></span>
         </div>
         <?php if ($minimum > 1) { ?>
         <div class="minimum"><?php echo $text_minimum; ?></div>
@@ -284,9 +278,9 @@
     <input type="radio" name="rating" value="5" />
     &nbsp;<span><?php echo $entry_good; ?></span><br />
     <br />
-    <b><?php echo $entry_captcha; ?></b><br />
+    <b><?php echo $entry_captcha; ?></b><br /><br />
     <input type="text" name="captcha" value="" />
-    <br />
+    <br /><br />
     <img src="index.php?route=product/product/captcha" alt="" id="captcha" /><br />
     <br />
     <div class="buttons">
